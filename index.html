@@ -326,27 +326,32 @@
   <p class="section-sub" style="margin-bottom:2.5rem;">From campus outreach to live speaker sessions — here's a look at what the Career Collective has been doing and what's coming next.</p>
 
   <div class="events-tabs">
-    <button class="events-tab" onclick="switchTab('upcoming', this)">Upcoming</button>
-    <button class="events-tab active" onclick="switchTab('past', this)">Past Events</button>
+    <button class="events-tab active" onclick="switchTab('upcoming', this)">Upcoming</button>
+    <button class="events-tab" onclick="switchTab('past', this)">Past Events</button>
   </div>
 
   <!-- UPCOMING -->
-  <div class="events-panel" id="panel-upcoming">
-    <div style="background:var(--navy-dark); border-radius:1.5rem; padding:3rem 2.5rem; text-align:center; border:1px solid rgba(201,146,42,0.25);">
-      <p style="font-size:1.1rem; color:var(--white); font-weight:700; margin-bottom:0.75rem;">No upcoming events posted yet</p>
-      <p style="font-size:0.9rem; color:rgba(255,255,255,0.6); max-width:480px; margin:0 auto 1.5rem; line-height:1.7;">We're planning our next event now. Follow us on Instagram, LinkedIn, and Discord to be the first to know when it's announced.</p>
-      <div style="display:flex; gap:0.75rem; justify-content:center; flex-wrap:wrap;">
-        <a href="https://www.instagram.com/thecareercollectiveclubsmc" target="_blank" style="color:var(--gold-light); font-weight:700; text-decoration:none; font-size:0.85rem;">Instagram</a>
-        <span style="color:rgba(255,255,255,0.3);">•</span>
-        <a href="https://www.linkedin.com/company/the-career-collective-club/" target="_blank" style="color:var(--gold-light); font-weight:700; text-decoration:none; font-size:0.85rem;">LinkedIn</a>
-        <span style="color:rgba(255,255,255,0.3);">•</span>
-        <a href="https://discord.gg/MCsnBMQvN" target="_blank" style="color:var(--gold-light); font-weight:700; text-decoration:none; font-size:0.85rem;">Discord</a>
+  <div class="events-panel active" id="panel-upcoming">
+    <div class="upcoming-card">
+      <div class="event-date-block">
+        <div class="day">13</div>
+        <div class="month">Oct</div>
+      </div>
+      <div class="event-info">
+        <h3>First Fall Meeting</h3>
+        <div class="event-meta">
+          <span>📍 BUS 201 — SMC</span>
+          <span>💻 <a href="https://smc-edu.zoom.us/j/4821094616" target="_blank" style="color:var(--gold-light); text-decoration:none;">Join on Zoom</a></span>
+        </div>
+        <p>Kicking off the fall semester! Join us in person at BUS 201 or hop on Zoom if you can't make it to campus — either way, you'll get the full rundown on what the Career Collective has planned this semester. All majors welcome, no experience needed.</p>
+        <span class="event-tag">General Meeting</span>
+        <span class="event-tag" style="margin-left:0.5rem;">In-Person or Zoom</span>
       </div>
     </div>
   </div>
 
   <!-- PAST EVENTS -->
-  <div class="events-panel active" id="panel-past">
+  <div class="events-panel" id="panel-past">
     <div class="past-event-featured">
       <span class="past-badge">May 2025</span>
       <h3>Sajid Veera — Self-Made Entrepreneur Live Q&amp;A</h3>
