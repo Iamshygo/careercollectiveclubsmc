@@ -543,7 +543,7 @@ async function submitInterestForm() {
   try {
     // Build URL with query parameters to avoid CORS issues with Google Apps Script
     const params = new URLSearchParams({ name, studentId, email, major, howHeard });
-    const url = "https://script.google.com/macros/s/AKfycbwbWSNw94T1VZ8BhhEeSSrtAyqDcz38FHgrBxX8Fhgo0JpA2hq24kUEkf-QCb3s9RBP/exec?" + params.toString();
+    const url = "https://script.google.com/macros/s/AKfycbx5epW29_ZGtrJzuLvMKbpt4cf8R64qxIBNI8ow1rOo6pk7ZAOV2AJ10H-VltHM1WdO9g/exec?" + params.toString();
 
     await fetch(url, { method: "GET", mode: "no-cors" });
 
